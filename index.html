@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+
+<body>
+    <h1>Trò chơi đoán số</h1>
+    <div id="choi" style="display: block;">
+        <label>Lần đoán thứ</label>
+        <input id="num" disabled><br><br>
+        <label for="number">Nhập số cần đoán</label>
+        <input type="text" id="number">
+        <input type="submit" value="OK"><br>
+        <input type="button" value="Xem kết quả">
+    </div>
+    <div id="ketqua" style="display: none;">
+        <label>Tổng số lần đoán</label>
+        <input id="soLanDoan" disabled><br><br>
+        <label>Số lần đoán đúng</label>
+        <input id="soLanDoanDung" disabled><br><br>
+        <label>Tổng điểm</label>
+        <input id="tongDiem" disabled><br><br>
+        <input type="button" id="choiTiep" value="Chơi tiếp">
+        <input type="button" id="choiLai" value="Chơi lại">
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

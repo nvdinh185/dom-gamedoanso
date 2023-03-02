@@ -7,6 +7,7 @@ document.getElementById("num").value = soLanDoan + 1;
 var subBtn = document.querySelector('input[type="submit"]');
 subBtn.onclick = function () {
     soLanDoan++;
+    // Tạo số ngẫu nhiên từ 0 đến 5
     var rdNumber = Math.floor(Math.random() * 6);
 
     var number = document.getElementById("number").value;
@@ -18,6 +19,7 @@ subBtn.onclick = function () {
         alert("Bạn đoán sai rồi, số máy tạo ra là: " + rdNumber);
     }
     document.getElementById("num").value = soLanDoan + 1;
+    document.getElementById("number").value = '';
 
 }
 
